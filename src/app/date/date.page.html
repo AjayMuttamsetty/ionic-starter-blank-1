@@ -1,0 +1,12 @@
+
+<ion-content>
+  <ion-datetime [(ngModel)]="DateTime" placeholder="Select Date" [min]="minDate()"
+  [max]="maxDate()"></ion-datetime> 
+  <ion-row style="justify-content: center;">
+    <ion-col size="8">
+      <ion-button expand="block" (click)="closeModel()">
+        Ok
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

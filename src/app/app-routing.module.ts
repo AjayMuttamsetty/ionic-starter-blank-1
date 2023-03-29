@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'date',
+    loadChildren: () => import('./date/date.module').then( m => m.DatePageModule)
+  },
 ];
 
 @NgModule({
